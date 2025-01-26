@@ -74,6 +74,11 @@ function buildCharts(sample) {
         text: otu_labels.slice(0, 10).reverse(), 
         type: "bar", 
         orientation: "h", 
+        marker: { 
+          size: sample_values, 
+          color: otu_ids, 
+          colorscale: "Portland" 
+        } 
       } 
     ]; 
     let barLayout = { 
